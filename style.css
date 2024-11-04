@@ -1,0 +1,202 @@
+*{
+  cursor: url('1.cur') 7 9,  auto;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #a1886a;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+  
+}
+#chat-container {
+  top: 30%;
+  width: 400px;
+  border-radius: 8px;
+  box-shadow:  5px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: absolute;
+  z-index: 2;
+  
+}
+#chat-box {
+  height: 400px;
+  overflow-y: auto;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.message {
+  margin: 8px 0;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+.user-message {
+  text-align: right;
+  color: #333;
+  background-color: #cfcfcf23;
+  border-radius: 5px;
+}
+.bot-message {
+  text-align: left;
+  color: #555;
+}
+#input-container {
+  display: flex;
+  padding: 10px;
+  background-color: #fafafa;
+}
+#user-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+  cursor: url('text.cur') 12 12,  auto;
+}
+#send-button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #f0c29d;
+  color: #333;
+  cursor: pointer;
+  border-radius: 4px;
+  cursor: url('2.cur') 7 9,  pointer;
+}
+#send-button:hover {
+  background-color: #aa7b55;
+}
+
+.bottom {
+  position: absolute;
+  top: 140px;
+  left: 30%;
+  opacity: 0.5;
+  filter: drop-shadow(0px 0px 9px #222);
+  width: 1300px;
+  rotate: 5deg;
+  animation: load 3s ease;
+}
+
+.sleep {
+  animation-delay: 20s;
+  border: #f3e4d2;
+  opacity: 0.8;
+  height: 500px;
+  position: absolute;
+  bottom: -70px;
+  left: 70px;
+  cursor: url('1.cur') 7 9,  auto;
+  scale: 1.5;
+  animation: load 3s ease;
+}
+
+
+.squirrel {
+  position: absolute;
+  z-index: 1000;
+  top: 140px;
+  right: 890px;
+  width: 80px;
+  border: #ffcccb;
+  filter: drop-shadow(3px 1px 3px #222222ab);
+  scale: 1.9;
+  animation: load 3s ease;
+}
+
+.pump {
+  border: none;
+  position: absolute;
+  z-index: 999;
+  cursor: url('2.cur') 7 9,  pointer;
+  left: 140px;
+  top: 37%;
+  background-color: transparent;
+  width: 300px;
+  opacity: 0.7;
+  animation: load 3s ease;
+}
+.pump img {
+  position: relative;
+  width: 100%;
+  filter: drop-shadow(0px 0px 5px #222);
+}
+
+.pump img:hover {
+  cursor: url('2.cur') 7 9,  pointer;
+  transform: scale(1.16);
+  transition: 0.15s;
+}
+
+.x {
+  border: none;
+  position: absolute;
+  z-index: 999;
+  cursor: url('2.cur') 7 9,  pointer;
+  right: 140px;
+  top: 37%;
+  background-color: transparent;
+  width: 300px;
+  opacity: 0.7;
+  animation: load 3s ease;
+  
+}
+
+.x img {
+  position: relative;
+  width: 100%;
+  filter: drop-shadow(0px 0px 5px #222);
+}
+
+.x img:hover {
+  cursor: url('2.cur') 7 9,  pointer;
+  transform: scale(1.16);
+  transition: 0.15s;
+}
+
+.title {
+  position: absolute;
+  top: 5%;
+  font-size: 180px;
+  font-family: "Bona Nova SC", serif;
+  font-weight: 800;
+  color: #fff;
+  filter: drop-shadow(10px 2px 5px #222222ab);
+  z-index: 1100;
+  background-color: transparent;
+  border: none;
+  animation: load 3s ease;
+
+  word-spacing: 100px;
+}
+
+
+.bona-nova-sc-regular {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bona-nova-sc-bold {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.bona-nova-sc-regular-italic {
+  font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+@keyframes load {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.8;
+  }
+}
